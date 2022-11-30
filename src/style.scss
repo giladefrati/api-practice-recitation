@@ -11,3 +11,34 @@
   -webkit-text-size-adjust: 100%;
 }
 
+table {
+  text-align: center;
+  width: 100%;
+  border: 2px solid lightgray;
+  padding: 0;
+  margin: 0;
+  table-layout: fixed;
+  border-collapse: collapse;
+
+  thead {
+    background-color: #f2f2f2;
+
+    th {
+      border: 1px solid lightgray;
+    }
+  }
+
+  tr {
+    &:nth-child(even) {
+      background-color: #5f90b047;
+    }
+
+    &:hover {
+      background-color: #5f90b0;
+    }
+
+    td {
+      border: 1px solid lightgray;
+    }
+  }
+}
